@@ -1,0 +1,25 @@
+ALGORITHM sentence count
+VAR
+    vcount=0;
+    chcount=0;
+    wcount=0;
+sentence : STRING := "Hello world.";
+vowels : array_name : ARRAY_OF vowels["a","e","i","o","u"];
+
+BEGIN
+    STRING=STRING.toLowerCase();
+    for(var i:=0; i<=STRING.length();i++){
+       IF (vowels.indexOf(STRING[i]) > -1 )
+     {vcount++;}
+  }) THEN
+           return vcount
+       ELSE_IF (char.indexOf(STRING[''])>-1 && char.indexOf(STRING[''])> 1) 
+       {wcount++;}
+       THEN
+           return wcount
+       ELSE
+           chcount+=STRING.length;
+           return chcount;
+       END_IF
+    }
+END
